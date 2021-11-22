@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.AgregarFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/layoutmaster"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutname"
+        app:layout_constraintEnd_toEndOf="@+id/layoutmaster"
+        app:layout_constraintStart_toStartOf="@+id/layoutmaster"
+        app:layout_constraintTop_toBottomOf="@+id/layoutmaster"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingTop="16dp" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="Placeholder"
+        app:layout_constraintEnd_toEndOf="@+id/layoutname"
+        app:layout_constraintStart_toStartOf="@+id/layoutname"
+        app:layout_constraintTop_toBottomOf="@+id/layoutname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linerspinner"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/text_input_layout_name"
+        app:layout_constraintStart_toStartOf="@+id/text_input_layout_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_name">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Genero"
+        android:textStyle="bold"
+        android:id="@+id/genero_text"
+        android:textColor="@android:color/black"
+        android:paddingTop="16dp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnergenero"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutdescripcion"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/linerspinner"
+        app:layout_constraintStart_toStartOf="@+id/linerspinner"
+        app:layout_constraintTop_toBottomOf="@+id/linerspinner">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Description"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingTop="16dp" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="Type here"
+        app:layout_constraintEnd_toEndOf="@+id/layoutdescripcion"
+        app:layout_constraintStart_toStartOf="@+id/layoutdescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/layoutdescripcion">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layouturl"
+
+        app:layout_constraintEnd_toEndOf="@+id/text_input_layout_descripcion"
+        app:layout_constraintStart_toStartOf="@+id/text_input_layout_descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_descripcion">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="URL Image"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingTop="16dp" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_Url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="Placeholde"
+        app:layout_constraintEnd_toEndOf="@+id/layouturl"
+        app:layout_constraintStart_toStartOf="@+id/layouturl"
+        app:layout_constraintTop_toBottomOf="@+id/layouturl">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="@+id/text_input_layout_Url"
+        app:layout_constraintStart_toStartOf="@+id/text_input_layout_Url"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_Url">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:text="add user"
+            android:id="@+id/add"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

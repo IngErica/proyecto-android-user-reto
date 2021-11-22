@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314886423037",
+    "project_id": "userreto-df1b6",
+    "storage_bucket": "userreto-df1b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314886423037:android:ed84ed3797fae1dd941994",
+        "android_client_info": {
+          "package_name": "com.example.userreto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314886423037-cnr47gmjfvf85rdakavmh92pjogersgi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZOResQY-R-j-ZvQ8jQXwEnx_a8MWqIlQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314886423037-cnr47gmjfvf85rdakavmh92pjogersgi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
